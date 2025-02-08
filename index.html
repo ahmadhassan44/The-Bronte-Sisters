@@ -1,31 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
-
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Pochaevsk&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Pochaevsk&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <title>Document</title>
 </head>
-
-<body>
-    <header>
-
+<body style="font-family: Playfair Display;">
+    <header style="display: flex;flex-direction: row;align-items: center; height: 10vh;">
+        <img src="assets/images/logo.png" alt="logo" style="height: 100%; width: auto; object-fit: contain;">
+        <div>
+            <h1 style="margin-bottom: 2px;">Wuthering Heights</h1>
+            <p style="margin-top: 0;">by Emily B.</p>
+        </div>
+        <div style="flex: 0.5;"></div>
+        <nav style="flex: 1;">
+            <ul style="list-style: none; display: flex; gap: 30px;">
+                <li>
+                    <a href="#" style="text-decoration: none;color: #000;font-weight: 500;font-size: large;">Other Books</a>
+                </li>
+                <li>
+                    <a href="#" style="text-decoration: none;color: #000;font-weight: 500;font-size: large;">Poems</a>
+                </li>
+                <li>
+                    <a href="#" style="text-decoration: none;color: #000;font-weight: 500;font-size: large;">Personal Life</a>
+                </li>
+                <li>
+                    <a href="#" style="text-decoration: none;color: #000;font-weight: 500;font-size: large;">Brontë Sisters</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-
-    </nav>
     <main>
-
+        <div style="display: flex;flex: 1;justify-content:center;margin-top: 20vh;">
+            <img src="/assets/images/terrain.png" alt="" style="width: 50%; height: auto; object-fit: contain;">
+        </div>
     </main>
-    <footer></footer>
 </body>
-
 </html>
