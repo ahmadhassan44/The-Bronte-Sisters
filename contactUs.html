@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        /* Right Section */
+        .contact-form {
+            width: 60%;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .contact-form label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        .contact-form input, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+ 
+        .contact-form button {
+            background: #2d2d2d;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            cursor: pointer;
+            width: 100%;
+        }
+ 
+    </style>
+</head>
+<body style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f5f5f5;">
+    <div style="    display: flex; width: 1000px; height: 400px; background: white; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;">
+        <!-- Left Section - Contact Info -->
+        <div style=" width: 40%; background: #C9C9C9; color: black; padding: 40px; display: flex; flex-direction: column; justify-content: center;">
+            <h2>Contact Information</h2>
+            <p><i>📞</i> +1012 3456 789</p>
+            <p><i>📧</i> demo@gmail.com</p>
+            <p><i>📍</i> 132 Dartmouth Street, Boston, USA</p>
+
+        </div>
+        
+        <!-- Right Section - Contact Form -->
+        <div class="contact-form">
+            <form>
+                <label>First Name</label>
+                <input type="text" placeholder="Enter your first name">
+
+                <label>Last Name</label>
+                <input type="text" placeholder="Enter your last name">
+
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email">
+
+                <label>Message</label>
+                <textarea rows="3" placeholder="Write your message..."></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
