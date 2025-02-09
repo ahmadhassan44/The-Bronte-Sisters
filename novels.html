@@ -1,31 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Pochaevsk&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Pochaevsk&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Novels</title>
-</head>
-<body  style="font-family: 'Playfair Display', serif; padding-left: 4%;padding-right: 4%;">
+  </head>
+  <body
+    style="
+      font-family: 'Playfair Display', serif;
+      padding-left: 4%;
+      padding-right: 4%;
+    "
+  >
     <header style="display: flex; align-items: center; height: 10vh">
-        <img src="assets/images/logo.png" alt="logo" style="height: 100%; width: auto; object-fit: contain;">
-        <div>
-            <h1 style="margin-bottom: 2px;">Novels</h1>
-            <p style="margin-top: 0;">By Brontë Sisters</p>
-        </div>
+      <img
+        src="assets/images/logo.png"
+        alt="logo"
+        style="height: 100%; width: auto; object-fit: contain"
+      />
+      <div>
+        <h1 style="margin-bottom: 2px">Novels</h1>
+        <p style="margin-top: 0">By Brontë Sisters</p>
+      </div>
     </header>
-    <main>
+    <main style="margin-top: 3%">
+      <article>
+        <!-- Jane Eyre Card -->
         <section>
-            
+          <div
+            style="
+              display: flex;
+              align-items: flex-start;
+              gap: 20px;
+              margin-bottom: 2%;
+              padding: 2%;
+              /* border: 1px solid #ddd;
+            border-radius: 10px; */
+            "
+          >
+            <!-- Book Cover -->
+            <img
+              src="assets/images/novels/janeEyre.jpg"
+              alt="Jane Eyre Cover"
+              style="
+                width: 150px;
+                height: 220px;
+                object-fit: cover;
+                border-radius: 5px;
+              "
+            />
+
+            <!-- Book Details -->
+            <div style="text-align: left; max-width: 70%">
+              <!-- Title -->
+              <h2 style="margin: 0; font-size: 1.8rem">Jane Eyre</h2>
+
+              <!-- Author and Date -->
+              <p style="margin: 5px 0; font-style: italic">
+                by Charlotte Brontë • Published: 1847
+              </p>
+
+              <!-- Description -->
+              <p style="font-size: 1rem; line-height: 1.5">
+                A groundbreaking novel that explores the emotional and moral
+                development of the fiercely independent Jane Eyre. The story
+                weaves themes of love, social criticism, and feminism, making it
+                a timeless classic.
+              </p>
+
+              <!-- Star Rating -->
+              <div
+                style="display: inline-block; font-size: 1.5rem; color: #ffd700"
+              >
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span style="color: #ccc">&#9733;</span>
+              </div>
+
+              <!-- Read now button -->
+              
+            </div>
+          </div>
         </section>
+        <!-- Wuthering Heights -->
+        <section>
+          <div
+            style="
+              display: flex;
+              align-items: flex-start;
+              gap: 20px;
+              margin-bottom: 2%;
+              padding: 2%;
+            "
+          >
+            <!-- Book Cover -->
+            <img
+              src="assets/images/novels/wutheringHeigths.jpg"
+              alt="Wuthering Heights Cover"
+              style="
+                width: 150px;
+                height: 220px;
+                object-fit: cover;
+                border-radius: 5px;
+              "
+            />
+
+            <!-- Book Details -->
+            <div style="text-align: left; max-width: 70%">
+              <!-- Title -->
+              <h2 style="margin: 0; font-size: 1.8rem">Wuthering Heights</h2>
+
+              <!-- Author and Date -->
+              <p style="margin: 5px 0; font-style: italic">
+                by Emily Brontë • Published: 1847
+              </p>
+
+              <!-- Description -->
+              <p style="font-size: 1rem; line-height: 1.5">
+                A haunting tale of passion, revenge, and the destructive power
+                of love set against the bleak, windswept Yorkshire moors.
+                <i>Wuthering Heights</i>
+                explores intense emotions and complex relationships that
+                transcend generations, making it a masterpiece of Gothic
+                fiction.
+              </p>
+
+              <!-- Star Rating -->
+              <div
+                style="display: inline-block; font-size: 1.5rem; color: #ffd700"
+              >
+                <span>&#9733;</span>
+                <!-- Filled Star -->
+                <span>&#9733;</span>
+                <!-- Filled Star -->
+                <span>&#9733;</span>
+                <!-- Filled Star -->
+                <span>&#9733;</span>
+                <!-- Filled Star -->
+                <span>&#9733;</span>
+                <!-- Filled Star (5/5 rating) -->
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- The Tenant of Wildfell Hall -->
+        <section>
+          <div
+            style="
+              display: flex;
+              align-items: flex-start;
+              gap: 20px;
+              margin-bottom: 2%;
+              padding: 2%;
+            "
+          >
+            <img
+              src="assets/images/novels/theTenant.jpg"
+              alt="The Tenant of Wildfell Hall Cover"
+              style="
+                width: 150px;
+                height: 220px;
+                object-fit: cover;
+                border-radius: 5px;
+              "
+            />
+
+            <div style="text-align: left; max-width: 70%">
+              <h2 style="margin: 0; font-size: 1.8rem">
+                The Tenant of Wildfell Hall
+              </h2>
+
+              <p style="margin: 5px 0; font-style: italic">
+                by Anne Brontë • Published: 1848
+              </p>
+
+              <p style="font-size: 1rem; line-height: 1.5">
+                A bold and ahead-of-its-time novel,
+                <i>The Tenant of Wildfell Hall</i> is a powerful critique of
+                Victorian marriage norms. Through the story of Helen Graham, it
+                explores themes of feminism, personal freedom, and the struggles
+                of a woman seeking independence in a patriarchal society.
+              </p>
+
+              <div
+                style="display: inline-block; font-size: 1.5rem; color: #ffd700"
+              >
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span style="color: #ccc">&#9733;</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Villette -->
+        <section>
+          <div
+            style="
+              display: flex;
+              align-items: flex-start;
+              gap: 20px;
+              margin-bottom: 2%;
+              padding: 2%;
+            "
+          >
+            <img
+              src="assets/images/novels/villete.jpg"
+              alt="Villette Cover"
+              style="
+                width: 150px;
+                height: 220px;
+                object-fit: cover;
+                border-radius: 5px;
+              "
+            />
+
+            <div style="text-align: left; max-width: 70%">
+              <h2 style="margin: 0; font-size: 1.8rem">Villette</h2>
+
+              <p style="margin: 5px 0; font-style: italic">
+                by Charlotte Brontë • Published: 1853
+              </p>
+
+              <p style="font-size: 1rem; line-height: 1.5">
+                <i>Villette</i> is a profound exploration of isolation,
+                identity, and unrequited love. Following the journey of Lucy
+                Snowe as she ventures to a foreign land to find employment, the
+                novel delves into her inner struggles with resilience and
+                self-discovery amidst cultural and emotional challenges.
+              </p>
+
+              <div
+                style="display: inline-block; font-size: 1.5rem; color: #ffd700"
+              >
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span style="color: #ccc">&#9733;</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Agnes Grey -->
+        <section>
+          <div
+            style="
+              display: flex;
+              align-items: flex-start;
+              gap: 20px;
+              margin-bottom: 2%;
+              padding: 2%;
+            "
+          >
+            <img
+              src="assets/images/novels/agnesGrey.jpg"
+              alt="Agnes Grey Cover"
+              style="
+                width: 150px;
+                height: 220px;
+                object-fit: cover;
+                border-radius: 5px;
+              "
+            />
+
+            <div style="text-align: left; max-width: 70%">
+              <h2 style="margin: 0; font-size: 1.8rem">Agnes Grey</h2>
+
+              <p style="margin: 5px 0; font-style: italic">
+                by Anne Brontë • Published: 1847
+              </p>
+
+              <p style="font-size: 1rem; line-height: 1.5">
+                <i>Agnes Grey</i> is a compelling tale based on Anne Brontë's
+                own experiences as a governess. The novel provides a stark
+                portrayal of the challenges faced by governesses in Victorian
+                society, highlighting issues of class, morality, and the
+                resilience required to maintain one's integrity in the face of
+                adversity.
+              </p>
+
+              <div
+                style="display: inline-block; font-size: 1.5rem; color: #ffd700"
+              >
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span style="color: #ccc">&#9733;</span>
+                <span style="color: #ccc">&#9733;</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Shirley -->
+        <section>
+          <div
+            style="
+              display: flex;
+              align-items: flex-start;
+              gap: 20px;
+              margin-bottom: 2%;
+              padding: 2%;
+            "
+          >
+            <img
+              src="assets/images/novels/shirley.jpg"
+              alt="Shirley Cover"
+              style="
+                width: 150px;
+                height: 220px;
+                object-fit: cover;
+                border-radius: 5px;
+              "
+            />
+
+            <div style="text-align: left; max-width: 70%">
+              <h2 style="margin: 0; font-size: 1.8rem">Shirley</h2>
+
+              <p style="margin: 5px 0; font-style: italic">
+                by Charlotte Brontë • Published: 1849
+              </p>
+
+              <p style="font-size: 1rem; line-height: 1.5">
+                <i>Shirley</i> is set against the backdrop of the industrial
+                unrest in early 19th-century England. The novel explores themes
+                of class conflict, gender roles, and social change through the
+                strong-willed and independent character Shirley Keeldar,
+                challenging the traditional expectations of women during the
+                period.
+              </p>
+
+              <div
+                style="display: inline-block; font-size: 1.5rem; color: #ffd700"
+              >
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span style="color: #ccc">&#9733;</span>
+              </div>
+            </div>
+          </div>
+          s
+        </section>
+        <!-- The Professor -->
+        <section>
+          <div
+            style="
+              display: flex;
+              align-items: flex-start;
+              gap: 20px;
+              margin-bottom: 2%;
+              padding: 2%;
+            "
+          >
+            <img
+              src="assets/images/novels/theProfessor.jpg"
+              alt="The Professor Cover"
+              style="
+                width: 150px;
+                height: 220px;
+                object-fit: cover;
+                border-radius: 5px;
+              "
+            />
+
+            <div style="text-align: left; max-width: 70%">
+              <h2 style="margin: 0; font-size: 1.8rem">The Professor</h2>
+
+              <p style="margin: 5px 0; font-style: italic">
+                by Charlotte Brontë • Published: 1857
+              </p>
+
+              <p style="font-size: 1rem; line-height: 1.5">
+                <i>The Professor</i> follows the journey of William Crimsworth,
+                an Englishman who travels to Belgium to pursue a career in
+                teaching. Through his experiences, the novel explores themes of
+                ambition, identity, and cultural contrast, offering insights
+                into personal growth and the complexities of humans
+                relationships.
+              </p>
+
+              <div
+                style="display: inline-block; font-size: 1.5rem; color: #ffd700"
+              >
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span style="color: #ccc">&#9733;</span>
+                <span style="color: #ccc">&#9733;</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
     </main>
-    
-</body>
+  </body>
 </html>
