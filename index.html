@@ -13,7 +13,7 @@
     <title>Brontë Sisters</title>
   </head>
 
-  <body style="font-family: Playfair Display; padding-bottom: 8%; margin: 0">
+  <body style="font-family: Playfair Display; margin: 0; overflow-x: hidden;">
     <header
       style="
         display: flex;
@@ -75,7 +75,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main style="flex-grow: 1; margin-bottom: 10%">
       <section
         style="
           position: relative;
@@ -335,6 +335,34 @@
         </section>
       </article>
     </main>
-    <footer></footer>
+    <footer style="position: relative; bottom:0; background: #d1d1d1; color: black; text-align: center; padding: 15px; width: 100%;">
+    
+      <img src="./assets/images/logo.png" alt="Logo" style="width: 120px; margin-bottom: 10px;">
+      <hr style="border: 0; height: 1px; background-color: black; margin: 10px 0;">
+      <div style="display: flex; justify-content: space-around; text-align: left; flex-wrap: wrap;">
+          <div>
+              <h4>Reach us</h4>
+              <p><img src="./assets/images/call.png" alt="Call" style="width: 16px; height: 16px; vertical-align: middle;"> +92 1234 567</p>
+              <p><img src="./assets/images/email.png" alt="Email" style="width: 16px; height: 16px; vertical-align: middle;"> demo@gmail.com</p>
+              <p><img src="./assets/images/location.png" alt="Location" style="width: 16px; height: 16px; vertical-align: middle;"> NUST H-12, Islamabad</p>
+          </div>
+          <div>
+            <h3>Company</h3>
+            <p><a href="index.html" style="text-decoration: none; color: black;">About</a></p>
+            <p><a href="contactUs.html" style="text-decoration: none; color: black;">Contact</a></p>
+          </div>
+          <div>
+              <h4>Legal</h4>
+              <p>Privacy Policy</p>
+              <p>Terms and Services</p>
+              <p>Terms of Use</p>
+          </div>
+          <div>
+              <h4>Quick Links</h4>
+              <p>Downloads</p>
+              <p>Forum</p>
+          </div>
+      </div>
+  </footer>
   </body>
 </html>
