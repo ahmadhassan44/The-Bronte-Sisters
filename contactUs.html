@@ -1,131 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-</head>
-<body style="font-family: Playfair Display; padding-left: 4%; padding-right: 4%; padding-bottom: 8%;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Pochaevsk&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Brontë Sisters</title>
+  </head>
 
-    <!-- Header -->
-    <header style="display: flex; align-items: center; justify-content: space-between; width: 100%; height: 10vh; border-bottom: 2px solid #ddd; background: white;">
-        <div style="display: flex; align-items: center; gap: 8px;">
-            <img src="assets/images/logo.png" alt="logo" style="height: 50px; width: auto; object-fit: contain;">
-            <div>
-                <h1 style="font-size: 1.6rem; margin-bottom: 2px;">The Brontë Sisters</h1>
-                <p style="font-size: 0.7rem; margin-top: 0;">by Ahmad H. and Laiba Durrani</p>
-            </div>
-        </div>
-        <ul style="list-style: none; display: flex; gap: 2vw; padding: 0; margin: 0;">
-            <li>
-                <a href="novels.html" style="text-decoration: none; color: #000; font-weight: 500; font-size: medium;">Novels</a>
-            </li>
-            <li>
-                <a href="poems.html" style="text-decoration: none; color: #000; font-weight: 500; font-size: medium;">Poems</a>
-            </li>
-            <li>
-                <a href="contactUs.html" style="text-decoration: none; color: #000; font-weight: 500; font-size: medium;">Contact Us</a>
-            </li>
+  <body
+    style="
+      font-family: Playfair Display;
+      background: #f5f5f5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow-x: hidden;
+      margin: 0;
+   "
+  >
+    <header
+      style="
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 10vh;
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-bottom: 1%;
+        background-color: white;
+        border-bottom: 2px solid #ccc;
+      "
+    >
+      <img
+        src="assets/images/logo.png"
+        alt="logo"
+        style="height: 100%; width: auto; object-fit: contain"
+      />
+      <div>
+        <h1 style="margin-bottom: 2px">The Brontë Sisters</h1>
+        <p style="margin-top: 0">by Ahmad H. and Laiba D.</p>
+      </div>
+      <div style="flex: 1"></div>
+      <nav style="flex: 1">
+        <ul style="list-style: none; display: flex; gap: 2vw">
+          <li>
+            <a
+              href="novels.html"
+              style="
+                text-decoration: none;
+                color: #000;
+                font-weight: 500;
+                font-size: large;
+              "
+              >Novels</a
+            >
+          </li>
+          <li>
+            <a
+              href="poems.html"
+              style="
+                text-decoration: none;
+                color: #000;
+                font-weight: 500;
+                font-size: large;
+              "
+              >Poems</a
+            >
+          </li>
+          <li>
+            <a
+              href="contactUs.html"
+              style="
+                text-decoration: none;
+                color: #000;
+                font-weight: 500;
+                font-size: large;
+              "
+              >Contact Us</a
+            >
+          </li>
         </ul>
+      </nav>
     </header>
 
-    <!-- Contact Us Heading & Subtitle -->
-    <div style="text-align: center; margin-top: 40px;">
-        <h1 style="font-size: 2rem; font-weight: bold;">Contact Us</h1>
-        <p style="font-size: 1rem; color: #666;">Any question or remarks? Just write us a message!</p>
-    </div>
+    <!-- Main Content Section -->
+    <main style="flex-grow: 1; margin-bottom: 10%">
+      <div style="text-align: center; margin-top: 40px">
+        <h1 style="font-size: 2rem; font-weight: bold">Contact Us</h1>
+        <p style="font-size: 1rem; color: #666">
+          Any question or remarks? Just write us a message!
+        </p>
+      </div>
 
-    <!-- Wrapper to Center Contact Us Section -->
-    <div style="display: flex; justify-content: center; align-items: center; height: calc(100vh - 20vh); width: 100%;">
-      <div style="width: 80%; height: 500px; display: flex; background: white; margin: auto; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); border-radius: 10px;">
-
-        
-            <!-- Left Section - Contact Info -->
-            <div style="width: 40%; padding: 40px; background: #d1d1d1; border-radius: 10px 0 0 10px;">
-              <h2 style="font-size: 22px; margin-bottom: 20px;">Contact Information</h2>
-          
-              <!-- Phone -->
-              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
-                  <img src="./assets/images/call.png" width="20" height="20" alt="Phone">
-                  <p>+1 012 3456 789</p>
-              </div>
-          
-              <!-- Email -->
-              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
-                  <img src="./assets/images/email.png" width="20" height="20" alt="Email">
-                  <p>demo@gmail.com</p>
-              </div>
-          
-              <!-- Location -->
-              <div style="display: flex; align-items: center; gap: 10px;">
-                  <img src="./assets/images/location.png" width="20" height="20" alt="Location">
-                  <p>132 Dartmouth Street Boston, MA 02156 United States</p>
-              </div>
-
-              <!-- Social Icons -->
-              <div style="display: flex; justify-content: left; gap: 15px; margin-top: 150px;">
-                  <a href="#"><img src="./assets/images/twitter-icon.png" width="30"></a>
-                  <a href="#"><img src="./assets/images/instagram-icon.png" width="30"></a>
-                  <a href="#"><img src="./assets/images/discord-icon.png" width="30"></a>
-              </div>
+      <!-- Wrapper to Center Contact Us Section -->
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: calc(100vh - 20vh);
+          width: 100%;
+        "
+      >
+        <div
+          style="
+            width: 80%;
+            height: 500px;
+            display: flex;
+            background: white;
+            margin: auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+          "
+        >
+          <!-- Left Section - Contact Info -->
+          <div
+            style="
+              width: 40%;
+              padding: 40px;
+              background: #d1d1d1;
+              border-radius: 10px 0 0 10px;
+            "
+          >
+            <h2 style="font-size: 22px; margin-bottom: 20px">
+              Contact Information
+            </h2>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 10px;
+              "
+            >
+              <img
+                src="./assets/images/call.png"
+                width="20"
+                height="20"
+                alt="Phone"
+              />
+              <p>+1 012 3456 789</p>
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 10px;
+              "
+            >
+              <img
+                src="./assets/images/email.png"
+                width="20"
+                height="20"
+                alt="Email"
+              />
+              <p>demo@gmail.com</p>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px">
+              <img
+                src="./assets/images/location.png"
+                width="20"
+                height="20"
+                alt="Location"
+              />
+              <p>132 Dartmouth Street Boston, MA 02156 United States</p>
+            </div>
+            <div
+              style="
+                display: flex;
+                justify-content: left;
+                gap: 15px;
+                margin-top: 150px;
+              "
+            >
+              <a href="#"
+                ><img src="./assets/images/twitter-icon.png" width="30"
+              /></a>
+              <a href="#"
+                ><img src="./assets/images/instagram-icon.png" width="30"
+              /></a>
+              <a href="#"
+                ><img src="./assets/images/discord-icon.png" width="30"
+              /></a>
+            </div>
           </div>
-             <!-- Right Side: Contact Form -->
-            <div style="width: 60%; padding: 40px;">
-              <form style="display: flex; flex-direction: column; gap: 20px;">
 
-                  <!-- First Name & Last Name -->
-                  <div style="display: flex; gap: 20px;">
-                      <div style="flex: 1;">
-                          <label style="color: #aaa; font-size: 14px;">First Name</label>
-                          <input type="text" placeholder="" style="width: 100%; border: none; border-bottom: 1px solid #ccc; padding: 5px; font-size: 16px; outline: none;">
-                      </div>
-                      <div style="flex: 1;">
-                          <label style="color: #aaa; font-size: 14px;">Last Name</label>
-                          <input type="text" value="Doe"disabled style="width: 100%; border: none; border-bottom: 1px solid #ccc; padding: 5px; font-size: 16px; background: transparent;">
-                      </div>
-                  </div>
-          
-                  <!-- Email & Phone Number -->
-                  <div style="display: flex; gap: 20px;">
-                      <div style="flex: 1;">
-                          <label style="color: #aaa; font-size: 14px;">Email</label>
-                          <input type="email" placeholder="" style="width: 100%; border: none; border-bottom: 1px solid #ccc; padding: 5px; font-size: 16px; outline: none;">
-                      </div>
-                      <div style="flex: 1;">
-                          <label style="color: #aaa; font-size: 14px;">Phone Number</label>
-                          <input type="text" style="width: 100%; border: none; border-bottom: 1px solid #ccc; padding: 5px; font-size: 16px; outline: none;">
-                      </div>
-                  </div>
-          
-                  <!-- Select Subject (Radio Buttons) -->
-                  <div>
-                      <label style="font-size: 16px; font-weight: bold;">Select Subject?</label>
-                      <div style="font-size: 14px;display: flex; gap: 15px; margin-top: 5px;">
-                          <label style="display: flex; align-items: center; gap: 3px;">
-                              <input type="radio" name="subject" checked> General Inquiry
-                          </label>
-                          <label style="display: flex; align-items: center; gap: 3px;">
-                              <input type="radio" name="subject"> Questions
-                          </label>
-                          <label style="display: flex; align-items: center; gap: 5px;">
-                              <input type="radio" name="subject"> Comments
-                          </label>
-                          <label style="display: flex; align-items: center; gap: 5px;">
-                              <input type="radio" name="subject"> Suggestions
-                          </label>
-                      </div>
-                  </div>
-          
-                  <!-- Message Box -->
-                  <div>
-                      <label style="color: #aaa; font-size: 14px;">Message</label>
-                      <textarea placeholder="Write your message.." style="font-family:Arial, Helvetica, sans-serif; width: 100%; border: none; border-bottom: 1px solid #ccc;margin-top: 10px; font-size: 12px; outline: none; resize: none;"></textarea>
-                  </div>
-          
-                  <!-- Send Message Button -->
-                  <button type="submit" style="background: #aaa; color: white;padding: 8px; border: none; border-radius: 2px;margin-top: 90px; font-size: 16px; cursor: pointer;">Send Message</button>
-          
-              </form>
-          </div>          
-</body>
+          <!-- Right Side: Contact Form -->
+          <div style="width: 60%; padding: 40px">
+            <form style="display: flex; flex-direction: column; gap: 20px">
+              <div style="display: flex; gap: 20px">
+                <div style="flex: 1">
+                  <label style="color: #aaa; font-size: 14px">First Name</label>
+                  <input
+                    type="text"
+                    name="first_name"
+                    required
+                    maxlength="50"
+                    pattern="^[A-Za-z]+$"
+                    style="
+                      width: 100%;
+                      border: none;
+                      border-bottom: 1px solid #ccc;
+                      padding: 5px;
+                      font-size: 16px;
+                      outline: none;
+                    "
+                  />
+                </div>
+                <div style="flex: 1">
+                  <label style="color: #aaa; font-size: 14px">Last Name</label>
+                  <input
+                    type="text"
+                    value="Doe"
+                    disabled
+                    style="
+                      width: 100%;
+                      border: none;
+                      border-bottom: 1px solid #ccc;
+                      padding: 5px;
+                      font-size: 16px;
+                      color: #aaa;
+                      background: transparent;
+                    "
+                  />
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 20px">
+                <div style="flex: 1">
+                  <label style="color: #aaa; font-size: 14px">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    maxlength="100"
+                    style="
+                      width: 100%;
+                      border: none;
+                      border-bottom: 1px solid #ccc;
+                      padding: 5px;
+                      font-size: 16px;
+                      outline: none;
+                    "
+                  />
+                </div>
+                <div style="flex: 1">
+                  <label style="color: #aaa; font-size: 14px"
+                    >Phone Number</label
+                  >
+                  <input
+                    type="tel"
+                    name="phone"
+                    required
+                    pattern="\d{10,15}"
+                    maxlength="15"
+                    style="
+                      width: 100%;
+                      border: none;
+                      border-bottom: 1px solid #ccc;
+                      padding: 5px;
+                      font-size: 16px;
+                      outline: none;
+                    "
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label style="font-size: 16px; font-weight: bold"
+                  >Select Subject?</label
+                >
+                <div
+                  style="
+                    font-size: 14px;
+                    display: flex;
+                    gap: 15px;
+                    margin-top: 5px;
+                  "
+                >
+                  <label style="display: flex; align-items: center; gap: 3px">
+                    <input type="radio" name="subject" checked /> General
+                    Inquiry
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 3px">
+                    <input type="radio" name="subject" /> Questions
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 5px">
+                    <input type="radio" name="subject" /> Comments
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 5px">
+                    <input type="radio" name="subject" /> Suggestions
+                  </label>
+                </div>
+              </div>
+
+              <div>
+                <label style="color: #aaa; font-size: 14px">Message</label>
+                <textarea
+                  placeholder="Write your message.."
+                  style="
+                    font-family: Arial, Helvetica, sans-serif;
+                    width: 100%;
+                    border: none;
+                    border-bottom: 1px solid #ccc;
+                    margin-top: 10px;
+                    font-size: 12px;
+                    outline: none;
+                    resize: none;
+                  "
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                style="
+                  background: #aaa;
+                  color: white;
+                  padding: 8px;
+                  border: none;
+                  border-radius: 2px;
+                  margin-top: 90px;
+                  font-size: 16px;
+                  cursor: pointer;
+                "
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer Section -->
+    <footer
+      style="
+        position: relative;
+        bottom: 0;
+        background: #d1d1d1;
+        color: black;
+        text-align: center;
+        padding: 15px;
+        width: 100%;
+      "
+    >
+      <img
+        src="./assets/images/logo.png"
+        alt="Logo"
+        style="width: 120px; margin-bottom: 10px"
+      />
+      <hr
+        style="border: 0; height: 1px; background-color: black; margin: 10px 0"
+      />
+      <div
+        style="
+          display: flex;
+          justify-content: space-around;
+          text-align: left;
+          flex-wrap: wrap;
+        "
+      >
+        <div>
+          <h4>Reach us</h4>
+          <p>
+            <img
+              src="./assets/images/call.png"
+              alt="Call"
+              style="width: 16px; height: 16px; vertical-align: middle"
+            />
+            +92 1234 567
+          </p>
+          <p>
+            <img
+              src="./assets/images/email.png"
+              alt="Email"
+              style="width: 16px; height: 16px; vertical-align: middle"
+            />
+            demo@gmail.com
+          </p>
+          <p>
+            <img
+              src="./assets/images/location.png"
+              alt="Location"
+              style="width: 16px; height: 16px; vertical-align: middle"
+            />
+            NUST H-12, Islamabad
+          </p>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <p>
+            <a href="index.html" style="text-decoration: none; color: black"
+              >About</a
+            >
+          </p>
+          <p>
+            <a href="contactUs.html" style="text-decoration: none; color: black"
+              >Contact</a
+            >
+          </p>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <p>Privacy Policy</p>
+          <p>Terms and Services</p>
+          <p>Terms of Use</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <p>Downloads</p>
+          <p>Forum</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
