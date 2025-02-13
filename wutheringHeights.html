@@ -17,22 +17,76 @@
     <title>Wuthering Heights</title>
 </head>
 
-<body style="font-family: 'Playfair Display', serif; padding-left: 4%;padding-right: 4%;">
+<body style="font-family: Playfair Display; margin: 0;overflow-x: hidden; background: #f5f5f5;">
 
-    <header style="display: flex; align-items: center; height: 10vh">
-        <img src="assets/images/logo.png" alt="logo" style="height: 100%; width: auto; object-fit: contain;">
-        <div>
-            <h1 style="margin-bottom: 2px;">Wuthering Heights</h1>
-            <p style="margin-top: 0;">By Emily Brontë</p>
-        </div>
-    </header>
-    <main>
+    <header
+    style="
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 10vh;
+      padding-left: 4%;
+      padding-right: 4%;
+      padding-bottom: 1%;
+      background-color: white;
+      border-bottom: 2px solid #ccc;
+    "
+  >
+    <img
+      src="assets/images/logo.png"
+      alt="logo"
+      style="height: 100%; width: auto; object-fit: contain"
+    />
+    <div>
+      <h1 style="margin-bottom: 2px">The Brontë Sisters</h1>
+      <p style="margin-top: 0">by Ahmad H. and Laiba D.</p>
+    </div>
+    <div style="flex: 1"></div>
+    <nav style="flex: 1">
+      <ul style="list-style: none; display: flex; gap: 2vw">
+        <li>
+          <a
+            href="novels.html"
+            style="
+              text-decoration: none;
+              color: #000;
+              font-weight: 500;
+              font-size: large;
+            "
+            >Novels</a
+          >
+        </li>
+        <li>
+          <a
+            href="poems.html"
+            style="
+              text-decoration: none;
+              color: #000;
+              font-weight: 500;
+              font-size: large;
+            "
+            >Poems</a
+          >
+        </li>
+        <li>
+          <a
+            href="contactUs.html"
+            style="
+              text-decoration: none;
+              color: #000;
+              font-weight: 500;
+              font-size: large;
+            "
+            >Contact Us</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+    <main style="padding-left: 4%; padding-right: 4%; padding-top: 3%; padding-bottom: 3%;">
+        <h1 style="margin-bottom: 10px;">Wuthering Heights</h1>
         <article style="text-align: justify; font-size: 1.1rem; line-height: 1.7; position: relative;">
-            <figure style="width: 70%; margin: 1rem auto; display: block; float: none; text-align: center;margin-top: 2%;">
-                <img src="/assets/images/terrain.png" alt="Wuthering Heights Landscape" style="width: 100%; height: auto; margin-bottom: 0.5rem;">
-                <figcaption style="font-style: italic;">Through the Twilight Winds - Ethan G.</figcaption>
-            </figure>
-
             <div style="column-count: 2; column-gap: 2.5rem;">
                 <p><span style="float: left; font-size: 4rem; line-height: 3rem; padding-right: 0.5rem; padding-top: 0.5rem;">E</span>mily Brontë's <i>Wuthering Heights</i> is a novel that defies easy categorization, blending elements of Gothic horror, romantic tragedy, and social commentary to create a story that continues to captivate literary scholars and readers alike. Set against the bleak and desolate Yorkshire moors, the novel follows the turbulent lives of its characters, primarily Heathcliff and Catherine Earnshaw, whose love story is marked by intense passion, social constraints, and ultimately, self-destruction.</p>
 
@@ -50,7 +104,86 @@
             </div>
         </article>
     </main>
-
+    <footer
+      style="
+        position: relative;
+        bottom: 0;
+        background: #d1d1d1;
+        color: black;
+        text-align: center;
+        padding: 15px;
+        width: 100%;
+      "
+    >
+      <img
+        src="./assets/images/logo.png"
+        alt="Logo"
+        style="width: 120px; margin-bottom: 10px"
+      />
+      <hr
+        style="border: 0; height: 1px; background-color: black; margin: 10px 0"
+      />
+      <div
+        style="
+          display: flex;
+          justify-content: space-around;
+          text-align: left;
+          flex-wrap: wrap;
+        "
+      >
+        <div>
+          <h4>Reach us</h4>
+          <p>
+            <img
+              src="./assets/images/call.png"
+              alt="Call"
+              style="width: 16px; height: 16px; vertical-align: middle"
+            />
+            +92 1234 567
+          </p>
+          <p>
+            <img
+              src="./assets/images/email.png"
+              alt="Email"
+              style="width: 16px; height: 16px; vertical-align: middle"
+            />
+            demo@gmail.com
+          </p>
+          <p>
+            <img
+              src="./assets/images/location.png"
+              alt="Location"
+              style="width: 16px; height: 16px; vertical-align: middle"
+            />
+            NUST H-12, Islamabad
+          </p>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <p>
+            <a href="index.html" style="text-decoration: none; color: black"
+              >About</a
+            >
+          </p>
+          <p>
+            <a href="contactUs.html" style="text-decoration: none; color: black"
+              >Contact</a
+            >
+          </p>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <p>Privacy Policy</p>
+          <p>Terms and Services</p>
+          <p>Terms of Use</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <p>Downloads</p>
+          <p>Forum</p>
+        </div>
+      </div>
+    </footer>
 </body>
 
 </html>
