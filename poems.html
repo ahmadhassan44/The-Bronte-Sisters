@@ -3,10 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="assets/images/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,86 +10,37 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Pochaevsk&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="poems.css" />
     <title>Poems</title>
   </head>
 
-  <body
-    style="
-      font-family: 'Playfair Display', serif;
-      background: #f5f5f5;
-      margin: 0;
-      overflow-x: hidden;
-    "
-  >
-    <header
-      style="
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        height: 10vh;
-        padding-left: 4%;
-        padding-right: 4%;
-        padding-bottom: 1%;
-        background-color: white;
-        border-bottom: 2px solid #ccc;
-      "
-    >
-    <a href="index.html" style="display: inline-block;width: auto;height: 100%;">
-      <img
-        src="assets/images/logo.png"
-        alt="logo"
-        style="height: 100%; width: auto; object-fit: contain;"
-      />
-    </a>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo-link">
+        <img src="assets/images/logo.png" alt="logo" class="logo-image" />
+      </a>
       <div>
-        <h1 style="margin-bottom: 2px">The Brontë Sisters</h1>
-        <p style="margin-top: 0">by Ahmad H. and Laiba D.</p>
+        <h1 class="header-title">The Brontë Sisters</h1>
+        <p class="header-subtitle">by Ahmad H. and Laiba D.</p>
       </div>
-      <div style="flex: 1"></div>
-      <nav style="flex: 1">
-        <ul style="list-style: none; display: flex; gap: 2vw">
+      <div class="spacer"></div>
+      <nav class="nav">
+        <ul class="nav-list">
           <li>
-            <a
-              href="novels.html"
-              style="
-                text-decoration: none;
-                color: #000;
-                font-weight: 500;
-                font-size: large;
-              "
-              >Novels</a
-            >
+            <a href="novels.html" class="nav-link">Novels</a>
           </li>
           <li>
-            <a
-              href="poems.html"
-              style="
-                text-decoration: none;
-                color: #000;
-                font-weight: 500;
-                font-size: large;
-              "
-              >Poems</a
-            >
+            <a href="poems.html" class="nav-link">Poems</a>
           </li>
           <li>
-            <a
-              href="contactUs.html"
-              style="
-                text-decoration: none;
-                color: #000;
-                font-weight: 500;
-                font-size: large;
-              "
-              >Contact Us</a
-            >
+            <a href="contactUs.html" class="nav-link">Contact Us</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main style="padding-left: 4%; padding-right: 4%">
+    <main class="main-content">
       <!-- A brief introductory text to explain the poetic realms of bronte works -->
-      <section>
+      <section class="poems-intro">
         <h2>The Poetic World of the Brontë Sisters</h2>
         <p>
           The poetry of Charlotte, Emily, and Anne Brontë is deeply reflective
@@ -103,7 +50,7 @@
           that mirrors their isolated upbringing on the Yorkshire moors.
         </p>
         <p>
-          <b>Emily Brontë’s</b> poetry, often regarded as the most powerful
+          <b>Emily Brontë's</b> poetry, often regarded as the most powerful
           among the three, exhibits a deep spiritual connection to nature and a
           fascination with the metaphysical. Her works, such as "No Coward Soul
           Is Mine" and "Remembrance," reflect her belief in an eternal force
@@ -111,9 +58,9 @@
           world and the intensity of solitude.
         </p>
         <p>
-          <b>Charlotte Brontë’s </b>poems, in contrast, are more personal and
+          <b>Charlotte Brontë's </b>poems, in contrast, are more personal and
           introspective, often exploring themes of loss, resilience, and the
-          struggles of a woman’s existence. Poems like "Life" and "Evening
+          struggles of a woman's existence. Poems like "Life" and "Evening
           Solace" convey a sense of hope and endurance in the face of hardship,
           emphasizing strength amid sorrow.
         </p>
@@ -135,15 +82,8 @@
       <!-- List of famous poems section -->
       <section>
         <h2>Lists of famous Poems:</h2>
-        <div
-          style="
-            display: flex;
-            flex-direction: row;
-            columns: 3;
-            justify-content: space-between;
-          "
-        >
-          <div>
+        <div class="poems-list">
+          <div class="poet-column">
             <h3>Emily Brontë</h3>
             <ol>
               <li>No Coward Soul Is Mine</li>
@@ -156,25 +96,25 @@
               <li>The Night is Darkening Round Me</li>
             </ol>
           </div>
-          <div>
+          <div class="poet-column">
             <h3>Charlotte Brontë</h3>
             <ol>
               <li>Evening Solace</li>
               <li>Life</li>
               <li>Parting</li>
               <li>Regret</li>
-              <li>The Teacher’s Monologue</li>
+              <li>The Teacher's Monologue</li>
               <li>On the Death of Anne Brontë</li>
             </ol>
           </div>
-          <div>
+          <div class="poet-column">
             <h3>Anne Brontë</h3>
             <ol>
               <li>A Voice from the Dungeon</li>
               <li>Call Me Away</li>
               <li>Despondency</li>
               <li>The Captive Dove</li>
-              <li>The Doubter’s Prayer</li>
+              <li>The Doubter's Prayer</li>
               <li>Memory</li>
               <li>Past Days</li>
               <li>Self-Congratulation</li>
@@ -184,17 +124,10 @@
       </section>
       <!-- A section for a famous poem by each of the bronte sisters -->
       <section>
-        <div
-          style="
-            display: flex;
-            flex-direction: row;
-            columns: 3;
-            justify-content: space-between;
-          "
-        >
-          <div>
-            <h2>No Coward Soul Is Mine</h2>
-            <p>
+        <div class="featured-poems">
+          <div class="poem-container">
+            <h2 class="poem-title">No Coward Soul Is Mine</h2>
+            <p class="poem-text">
               No coward soul is mine<br />
               No trembler in the world's storm-troubled sphere<br />
               I see Heaven's glories shine<br />
@@ -230,11 +163,15 @@
               Since thou art Being and Breath<br />
               And what thou art may never be destroyed.<br />
             </p>
-            <audio controls src="assets/audios/cowardSoul.m4a"></audio>
+            <audio
+              controls
+              src="assets/audios/cowardSoul.m4a"
+              class="poem-audio"
+            ></audio>
           </div>
-          <div>
-            <h2>Evening Solace</h2>
-            <p>
+          <div class="poem-container">
+            <h2 class="poem-title">Evening Solace</h2>
+            <p class="poem-text">
               Long ago I wished to leave<br />
               "The house where I was born;<br />" Long ago I used to grieve,<br />
               My home seemed so forlorn.<br />
@@ -270,11 +207,15 @@
               All my heaven was once thy breast,<br />
               Would it were mine again!<br />
             </p>
-            <audio controls src="assets/audios/eveningSolace.mp4"></audio>
+            <audio
+              controls
+              src="assets/audios/eveningSolace.mp4"
+              class="poem-audio"
+            ></audio>
           </div>
-          <div>
-            <h2>The Captive Dove</h2>
-            <p>
+          <div class="poem-container">
+            <h2 class="poem-title">The Captive Dove</h2>
+            <p class="poem-text">
               Poor restless dove, I pity thee;<br />
               And when I hear thy plaintive moan,<br />
               I mourn for thy captivity,<br />
@@ -303,52 +244,33 @@
               Yes, even there, if, listening by,<br />
               One faithful dear companion stood,<br />
               While gazing on her full bright eye,<br />
-              Thou might’st forget thy native wood.<br /><br />
+              Thou might'st forget thy native wood.<br /><br />
               <br />
               But thou, poor solitary dove,<br />
               Must make, unheard, thy joyless moan;<br />
               The heart that Nature formed to love<br />
               Must pine, neglected, and alone.<br />
-              <audio controls src="assets/audios/captiveDove.mp4"></audio>
             </p>
+            <audio
+              controls
+              src="assets/audios/captiveDove.mp4"
+              class="poem-audio"
+            ></audio>
           </div>
         </div>
       </section>
     </main>
-    <footer
-      style="
-        position: relative;
-        bottom: 0;
-        background: #d1d1d1;
-        color: black;
-        text-align: center;
-        padding: 15px;
-        width: 100%;
-      "
-    >
-      <img
-        src="./assets/images/logo.png"
-        alt="Logo"
-        style="width: 120px; margin-bottom: 10px"
-      />
-      <hr
-        style="border: 0; height: 1px; background-color: black; margin: 10px 0"
-      />
-      <div
-        style="
-          display: flex;
-          justify-content: space-around;
-          text-align: left;
-          flex-wrap: wrap;
-        "
-      >
-        <div>
+    <footer class="footer">
+      <img src="./assets/images/logo.png" alt="Logo" class="footer-logo" />
+      <hr class="footer-divider" />
+      <div class="footer-content">
+        <div class="footer-section">
           <h4>Reach us</h4>
           <p>
             <img
               src="./assets/images/call.png"
               alt="Call"
-              style="width: 16px; height: 16px; vertical-align: middle"
+              class="footer-icon"
             />
             +92 1234 567
           </p>
@@ -356,7 +278,7 @@
             <img
               src="./assets/images/email.png"
               alt="Email"
-              style="width: 16px; height: 16px; vertical-align: middle"
+              class="footer-icon"
             />
             demo@gmail.com
           </p>
@@ -364,31 +286,27 @@
             <img
               src="./assets/images/location.png"
               alt="Location"
-              style="width: 16px; height: 16px; vertical-align: middle"
+              class="footer-icon"
             />
             NUST H-12, Islamabad
           </p>
         </div>
-        <div>
+        <div class="footer-section">
           <h3>Company</h3>
           <p>
-            <a href="index.html" style="text-decoration: none; color: black"
-              >About</a
-            >
+            <a href="index.html" class="footer-link">About</a>
           </p>
           <p>
-            <a href="contactUs.html" style="text-decoration: none; color: black"
-              >Contact</a
-            >
+            <a href="contactUs.html" class="footer-link">Contact</a>
           </p>
         </div>
-        <div>
+        <div class="footer-section">
           <h4>Legal</h4>
           <p>Privacy Policy</p>
           <p>Terms and Services</p>
           <p>Terms of Use</p>
         </div>
-        <div>
+        <div class="footer-section">
           <h4>Quick Links</h4>
           <p>Downloads</p>
           <p>Forum</p>
