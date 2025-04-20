@@ -105,9 +105,8 @@ body {
 }
 
 .footer-logo {
-  height: 100%;
-  width: auto;
-  object-fit: contain;
+  width: 120px;
+  margin-bottom: 10px;
 }
 
 .footer-divider {
