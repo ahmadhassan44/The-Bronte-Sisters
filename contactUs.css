@@ -1,0 +1,276 @@
+/* Global Styles */
+body {
+  font-family: "Playfair Display", serif;
+  background: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 10vh;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 1%;
+  background-color: white;
+  border-bottom: 2px solid #ccc;
+}
+
+.logo-link {
+  display: inline-block;
+  width: auto;
+  height: 100%;
+}
+
+.logo-image {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.header-title {
+  margin-bottom: 2px;
+}
+
+.header-subtitle {
+  margin-top: 0;
+}
+
+.spacer {
+  flex: 1;
+}
+
+/* Navigation Styles */
+.nav {
+  flex: 1;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2vw;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: large;
+}
+
+/* Main Content Styles */
+.main-content {
+  flex-grow: 1;
+  margin-bottom: 10%;
+}
+
+.contact-header {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.contact-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.contact-subtitle {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Contact Form Wrapper */
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 20vh);
+  width: 100%;
+}
+
+.contact-container {
+  width: 80%;
+  height: 500px;
+  display: flex;
+  background: white;
+  margin: auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Left Section - Contact Info */
+.contact-info {
+  width: 40%;
+  padding: 40px;
+  background: #d1d1d1;
+  border-radius: 10px 0 0 10px;
+}
+
+.info-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.info-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: left;
+  gap: 15px;
+  margin-top: 150px;
+}
+
+.social-icon {
+  width: 30px;
+}
+
+/* Right Section - Contact Form */
+.form-container {
+  width: 60%;
+  padding: 40px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+}
+
+.form-label {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.form-input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.form-input-disabled {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+  font-size: 16px;
+  color: #aaa;
+  background: transparent;
+}
+
+.subject-label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.subject-options {
+  font-size: 14px;
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.form-textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-top: 10px;
+  font-size: 12px;
+  outline: none;
+  resize: none;
+}
+
+.submit-button {
+  background: #aaa;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 2px;
+  margin-top: 90px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background: #999;
+}
+
+/* Footer Styles */
+.footer {
+  position: relative;
+  bottom: 0;
+  background: #d1d1d1;
+  color: black;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+}
+
+.footer-logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.footer-divider {
+  border: 0;
+  height: 1px;
+  background-color: black;
+  margin: 10px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  /* Column in footer */
+}
+
+.footer-icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: black;
+}

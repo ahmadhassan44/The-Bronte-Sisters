@@ -10,372 +10,194 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Pochaevsk&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="contactUs.css" />
     <title>Contact Us</title>
   </head>
 
-  <body
-    style="
-      font-family: Playfair Display;
-      background: #f5f5f5;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      overflow-x: hidden;
-      margin: 0;
-   "
-  >
-    <header
-      style="
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        height: 10vh;
-        padding-left: 4%;
-        padding-right: 4%;
-        padding-bottom: 1%;
-        background-color: white;
-        border-bottom: 2px solid #ccc;
-      "
-    >
-    <a href="index.html" style="display: inline-block;width: auto;height: 100%;">
-      <img
-        src="assets/images/logo.png"
-        alt="logo"
-        style="height: 100%; width: auto; object-fit: contain;"
-      />
-    </a>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo-link">
+        <img src="assets/images/logo.png" alt="logo" class="logo-image" />
+      </a>
       <div>
-        <h1 style="margin-bottom: 2px">The Brontë Sisters</h1>
-        <p style="margin-top: 0">by Ahmad H. and Laiba D.</p>
+        <h1 class="header-title">The Brontë Sisters</h1>
+        <p class="header-subtitle">by Ahmad H. and Laiba D.</p>
       </div>
-      <div style="flex: 1"></div>
-      <nav style="flex: 1">
-        <ul style="list-style: none; display: flex; gap: 2vw">
+      <div class="spacer"></div>
+      <nav class="nav">
+        <ul class="nav-list">
           <li>
-            <a
-              href="novels.html"
-              style="
-                text-decoration: none;
-                color: #000;
-                font-weight: 500;
-                font-size: large;
-              "
-              >Novels</a
-            >
+            <a href="novels.html" class="nav-link">Novels</a>
           </li>
           <li>
-            <a
-              href="poems.html"
-              style="
-                text-decoration: none;
-                color: #000;
-                font-weight: 500;
-                font-size: large;
-              "
-              >Poems</a
-            >
+            <a href="poems.html" class="nav-link">Poems</a>
           </li>
           <li>
-            <a
-              href="contactUs.html"
-              style="
-                text-decoration: none;
-                color: #000;
-                font-weight: 500;
-                font-size: large;
-              "
-              >Contact Us</a
-            >
+            <a href="contactUs.html" class="nav-link">Contact Us</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <!-- Main Content Section -->
-    <main style="flex-grow: 1; margin-bottom: 10%">
-      <div style="text-align: center; margin-top: 40px">
-        <h1 style="font-size: 2rem; font-weight: bold">Contact Us</h1>
-        <p style="font-size: 1rem; color: #666">
+    <main class="main-content">
+      <div class="contact-header">
+        <h1 class="contact-title">Contact Us</h1>
+        <p class="contact-subtitle">
           Any question or remarks? Just write us a message!
         </p>
       </div>
 
       <!-- Wrapper to Center Contact Us Section -->
-      <div
-        style="
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: calc(100vh - 20vh);
-          width: 100%;
-        "
-      >
-        <div
-          style="
-            width: 80%;
-            height: 500px;
-            display: flex;
-            background: white;
-            margin: auto;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-          "
-        >
+      <div class="contact-wrapper">
+        <div class="contact-container">
           <!-- Left Section - Contact Info -->
-          <div
-            style="
-              width: 40%;
-              padding: 40px;
-              background: #d1d1d1;
-              border-radius: 10px 0 0 10px;
-            "
-          >
-            <h2 style="font-size: 22px; margin-bottom: 20px">
-              Contact Information
-            </h2>
-            <div
-              style="
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                margin-bottom: 10px;
-              "
-            >
+          <div class="contact-info">
+            <h2 class="info-title">Contact Information</h2>
+            <div class="info-item">
               <img
                 src="./assets/images/call.png"
-                width="20"
-                height="20"
+                class="info-icon"
                 alt="Phone"
               />
               <p>+1 012 3456 789</p>
             </div>
-            <div
-              style="
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                margin-bottom: 10px;
-              "
-            >
+            <div class="info-item">
               <img
                 src="./assets/images/email.png"
-                width="20"
-                height="20"
+                class="info-icon"
                 alt="Email"
               />
               <p>demo@gmail.com</p>
             </div>
-            <div style="display: flex; align-items: center; gap: 10px">
+            <div class="info-item">
               <img
                 src="./assets/images/location.png"
-                width="20"
-                height="20"
+                class="info-icon"
                 alt="Location"
               />
               <p>132 Dartmouth Street Boston, MA 02156 United States</p>
             </div>
-            <div
-              style="
-                display: flex;
-                justify-content: left;
-                gap: 15px;
-                margin-top: 150px;
-              "
-            >
-              <a href="#"
-                ><img src="./assets/images/twitter-icon.png" width="30"
-              /></a>
-              <a href="#"
-                ><img src="./assets/images/instagram-icon.png" width="30"
-              /></a>
-              <a href="#"
-                ><img src="./assets/images/discord-icon.png" width="30"
-              /></a>
+            <div class="social-links">
+              <a href="#">
+                <img
+                  src="./assets/images/twitter-icon.png"
+                  class="social-icon"
+                  alt="Twitter"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/images/instagram-icon.png"
+                  class="social-icon"
+                  alt="Instagram"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/images/discord-icon.png"
+                  class="social-icon"
+                  alt="Discord"
+                />
+              </a>
             </div>
           </div>
 
           <!-- Right Side: Contact Form -->
-          <div style="width: 60%; padding: 40px">
-            <form style="display: flex; flex-direction: column; gap: 20px">
-              <div style="display: flex; gap: 20px">
-                <div style="flex: 1">
-                  <label style="color: #aaa; font-size: 14px">First Name</label>
+          <div class="form-container">
+            <form class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">First Name</label>
                   <input
                     type="text"
                     name="first_name"
                     required
                     maxlength="50"
                     pattern="^[A-Za-z]+$"
-                    style="
-                      width: 100%;
-                      border: none;
-                      border-bottom: 1px solid #ccc;
-                      padding: 5px;
-                      font-size: 16px;
-                      outline: none;
-                    "
+                    class="form-input"
                   />
                 </div>
-                <div style="flex: 1">
-                  <label style="color: #aaa; font-size: 14px">Last Name</label>
+                <div class="form-group">
+                  <label class="form-label">Last Name</label>
                   <input
                     type="text"
                     value="Doe"
                     disabled
-                    style="
-                      width: 100%;
-                      border: none;
-                      border-bottom: 1px solid #ccc;
-                      padding: 5px;
-                      font-size: 16px;
-                      color: #aaa;
-                      background: transparent;
-                    "
+                    class="form-input-disabled"
                   />
                 </div>
               </div>
 
-              <div style="display: flex; gap: 20px">
-                <div style="flex: 1">
-                  <label style="color: #aaa; font-size: 14px">Email</label>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">Email</label>
                   <input
                     type="email"
                     name="email"
                     required
                     maxlength="100"
-                    style="
-                      width: 100%;
-                      border: none;
-                      border-bottom: 1px solid #ccc;
-                      padding: 5px;
-                      font-size: 16px;
-                      outline: none;
-                    "
+                    class="form-input"
                   />
                 </div>
-                <div style="flex: 1">
-                  <label style="color: #aaa; font-size: 14px"
-                    >Phone Number</label
-                  >
+                <div class="form-group">
+                  <label class="form-label">Phone Number</label>
                   <input
                     type="tel"
                     name="phone"
                     required
                     pattern="\d{10,15}"
                     maxlength="15"
-                    style="
-                      width: 100%;
-                      border: none;
-                      border-bottom: 1px solid #ccc;
-                      padding: 5px;
-                      font-size: 16px;
-                      outline: none;
-                    "
+                    class="form-input"
                   />
                 </div>
               </div>
 
               <div>
-                <label style="font-size: 16px; font-weight: bold"
-                  >Select Subject?</label
-                >
-                <div
-                  style="
-                    font-size: 14px;
-                    display: flex;
-                    gap: 15px;
-                    margin-top: 5px;
-                  "
-                >
-                  <label style="display: flex; align-items: center; gap: 3px">
+                <label class="subject-label">Select Subject?</label>
+                <div class="subject-options">
+                  <label class="radio-label">
                     <input type="radio" name="subject" checked /> General
                     Inquiry
                   </label>
-                  <label style="display: flex; align-items: center; gap: 3px">
+                  <label class="radio-label">
                     <input type="radio" name="subject" /> Questions
                   </label>
-                  <label style="display: flex; align-items: center; gap: 5px">
+                  <label class="radio-label">
                     <input type="radio" name="subject" /> Comments
                   </label>
-                  <label style="display: flex; align-items: center; gap: 5px">
+                  <label class="radio-label">
                     <input type="radio" name="subject" /> Suggestions
                   </label>
                 </div>
               </div>
 
               <div>
-                <label style="color: #aaa; font-size: 14px">Message</label>
+                <label class="form-label">Message</label>
                 <textarea
                   placeholder="Write your message.."
-                  style="
-                    font-family: Arial, Helvetica, sans-serif;
-                    width: 100%;
-                    border: none;
-                    border-bottom: 1px solid #ccc;
-                    margin-top: 10px;
-                    font-size: 12px;
-                    outline: none;
-                    resize: none;
-                  "
+                  class="form-textarea"
                 ></textarea>
               </div>
 
-              <button
-                type="submit"
-                style="
-                  background: #aaa;
-                  color: white;
-                  padding: 8px;
-                  border: none;
-                  border-radius: 2px;
-                  margin-top: 90px;
-                  font-size: 16px;
-                  cursor: pointer;
-                "
-              >
-                Send Message
-              </button>
+              <button type="submit" class="submit-button">Send Message</button>
             </form>
           </div>
         </div>
       </div>
     </main>
     <!-- Footer Section -->
-    <footer
-      style="
-        position: relative;
-        bottom: 0;
-        background: #d1d1d1;
-        color: black;
-        text-align: center;
-        padding: 15px;
-        width: 100%;
-      "
-    >
-      <img
-        src="./assets/images/logo.png"
-        alt="Logo"
-        style="width: 120px; margin-bottom: 10px"
-      />
-      <hr
-        style="border: 0; height: 1px; background-color: black; margin: 10px 0"
-      />
-      <div
-        style="
-          display: flex;
-          justify-content: space-around;
-          text-align: left;
-          flex-wrap: wrap;
-        "
-      >
-        <div>
+    <footer class="footer">
+      <img src="./assets/images/logo.png" alt="Logo" class="footer-logo" />
+      <hr class="footer-divider" />
+      <div class="footer-content">
+        <div class="footer-section">
           <h4>Reach us</h4>
           <p>
             <img
               src="./assets/images/call.png"
               alt="Call"
-              style="width: 16px; height: 16px; vertical-align: middle"
+              class="footer-icon"
             />
             +92 1234 567
           </p>
@@ -383,7 +205,7 @@
             <img
               src="./assets/images/email.png"
               alt="Email"
-              style="width: 16px; height: 16px; vertical-align: middle"
+              class="footer-icon"
             />
             demo@gmail.com
           </p>
@@ -391,31 +213,27 @@
             <img
               src="./assets/images/location.png"
               alt="Location"
-              style="width: 16px; height: 16px; vertical-align: middle"
+              class="footer-icon"
             />
             NUST H-12, Islamabad
           </p>
         </div>
-        <div>
+        <div class="footer-section">
           <h3>Company</h3>
           <p>
-            <a href="index.html" style="text-decoration: none; color: black"
-              >About</a
-            >
+            <a href="index.html" class="footer-link">About</a>
           </p>
           <p>
-            <a href="contactUs.html" style="text-decoration: none; color: black"
-              >Contact</a
-            >
+            <a href="contactUs.html" class="footer-link">Contact</a>
           </p>
         </div>
-        <div>
+        <div class="footer-section">
           <h4>Legal</h4>
           <p>Privacy Policy</p>
           <p>Terms and Services</p>
           <p>Terms of Use</p>
         </div>
-        <div>
+        <div class="footer-section">
           <h4>Quick Links</h4>
           <p>Downloads</p>
           <p>Forum</p>
