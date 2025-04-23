@@ -176,3 +176,28 @@ a:hover {
   height: 16px;
   vertical-align: middle;
 }
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;  /* Changed from left: 20px to right: 20px */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: translateY(-3px);
+}
+
+.back-to-top.visible {
+    display: block;
+}
