@@ -56,69 +56,85 @@ body {
 
 /* Navigation Links */
 .nav-link {
-    text-decoration: none;
-    color: #333;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: #3f121b;
+  transition: color 0.3s ease;
+  position: relative;
+  padding-bottom: 2px;
 }
 
 .nav-link:hover {
-    color: #666;
-    text-decoration: underline;
+  color: #3f121b;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #3f121b;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
 }
 
 /* Footer Links */
 .footer-link {
-    text-decoration: none;
-    color: inherit;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
 }
 
 .footer-link:hover {
-    color: #666;
-    text-decoration: underline;
+  color: #666;
+  text-decoration: underline;
 }
 
 /* General Button Styles */
 button {
-    position: relative;
-    transition: all 0.3s ease;
-    z-index: 1;
+  position: relative;
+  transition: all 0.3s ease;
+  z-index: 1;
 }
 
 button::before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 4px;
-    opacity: 0;
-    z-index: -1;
-    transition: opacity 0.3s ease;
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease;
 }
 
 button:hover {
-    transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 
 button:hover::before {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* Update specific buttons if needed */
 .submit-button:hover {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Links within content */
 a {
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 a:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 /* Footer Styles */
