@@ -65,6 +65,7 @@ body {
 
 .nav-link:hover {
   color: #3f121b;
+  font-weight: bold;
 }
 
 .nav-link::after {
@@ -167,7 +168,6 @@ a:hover {
   flex-wrap: wrap;
 }
 
-
 .footer-icon {
   width: 16px;
   height: 16px;
@@ -175,26 +175,52 @@ a:hover {
 }
 
 .back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px; 
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    display: none;
-    font-size: 16px;
-    transition: all 0.3s ease;
-    z-index: 1000;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  display: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  z-index: 1000;
 }
 
 .back-to-top:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    transform: translateY(-3px);
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: translateY(-3px);
 }
 
 .back-to-top.visible {
-    display: block;
+  display: block;
+}
+
+/* Date and Time Styles in Footer */
+.footer-datetime-container {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.footer-datetime {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #333;
+  margin: 0;
+  padding: 0 10%;
+  font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-datetime {
+    padding: 0 5%;
+    font-size: 0.8rem;
+  }
 }
