@@ -1,0 +1,157 @@
+/* Welcome Message Overlay Styles */
+#welcome-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.welcome-container {
+  background-color: #fcf2f3;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 80%;
+  max-width: 700px;
+  max-height: 90vh;
+  overflow-y: auto;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transform: scale(0);
+  transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+}
+
+.welcome-icon {
+  margin: 0 auto 1rem;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-icon img {
+  width: 100%;
+  height: auto;
+}
+
+.welcome-container h1 {
+  font-family: "Playfair Display", serif;
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.welcome-container h1:after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background-color: #ddd;
+  margin: 0.8rem auto;
+}
+
+.welcome-quote {
+  position: relative;
+  margin: 2rem 0;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.quote-marker {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 3px;
+  height: 85%;
+  background-color: #d6bcfa;
+  border-radius: 2px;
+  margin: auto;
+}
+
+.welcome-quote blockquote {
+  font-style: italic;
+  color: #555;
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.welcome-quote cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-style: normal;
+  text-align: right;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.welcome-description {
+  margin: 1.5rem 0;
+  color: #555;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+#welcome-close-btn {
+  background-color: #440101;
+  color: white;
+  border: none;
+  padding: 0.7rem 2.5rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-family: "Playfair Display", serif;
+  transition: all 0.3s ease;
+}
+
+#welcome-close-btn:hover {
+  background-color: #5a0101;
+  transform: translateY(-2px);
+}
+
+/* Animation classes */
+#welcome-overlay.show {
+  opacity: 1;
+}
+
+#welcome-overlay.show .welcome-container {
+  transform: scale(1);
+}
+
+/* Hidden class to remove from DOM */
+.hidden {
+  display: none !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .welcome-container {
+    padding: 1.5rem;
+    width: 90%;
+  }
+
+  .welcome-quote {
+    padding: 0 1rem;
+  }
+
+  .welcome-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .welcome-quote blockquote {
+    font-size: 1rem;
+  }
+}
