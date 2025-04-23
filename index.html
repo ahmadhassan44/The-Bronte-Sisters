@@ -318,6 +318,31 @@
 
     <button id="backToTop" class="back-to-top">Back to Top ↑</button>
 
+    <!-- Welcome Overlay - Positioned at the end of body to avoid structure interference -->
+    <div id="welcome-overlay" class="hidden">
+      <div class="welcome-container">
+        <div class="welcome-icon">
+          <img src="assets/images/logo.png" alt="Logo" />
+        </div>
+        <h1>Welcome to The Brontë Sisters</h1>
+        <div class="welcome-quote">
+          <div class="quote-marker"></div>
+          <blockquote>
+            "I am no bird; and no net ensnares me: I am a free human being with
+            an independent will."
+          </blockquote>
+          <cite>― Charlotte Brontë, Jane Eyre</cite>
+        </div>
+        <p class="welcome-description">
+          Explore the lives and literary masterpieces of Charlotte, Emily, and
+          Anne Brontë, three extraordinary sisters whose works continue to
+          captivate readers worldwide.
+        </p>
+        <button id="welcome-close-btn">Enter Site</button>
+      </div>
+    </div>
+
     <script src="js/backToTop.js"></script>
+    <script src="js/welcome.js"></script>
   </body>
 </html>
