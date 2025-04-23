@@ -79,6 +79,11 @@ body {
 
 .social-icon {
   width: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
 }
 
 /* Right Section - Contact Form */
@@ -164,8 +169,11 @@ body {
   margin-top: 90px;
   font-size: 16px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .submit-button:hover {
   background: #999;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }

@@ -10,8 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Pochaevsk&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="global.css" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/welcome.css" />
     <title>Brontë Sisters</title>
   </head>
 
@@ -182,15 +183,17 @@
               <div class="novel-content">
                 <h3 class="novel-title">Jane Eyre</h3>
                 <p class="novel-author">By Charlotte Brontë</p>
-                <details>
-                  <summary class="novel-details-summary">Explore More</summary>
-                  <p class="novel-details-content">
-                    <i>Jane Eyre</i> is a classic novel that explores themes of
-                    love, morality, and self-respect through the journey of its
-                    strong-willed protagonist.
-                    <a href="janeEyre.html" class="novel-link">Read More</a>
-                  </p>
-                </details>
+                <div class="novel-details">
+                  <button class="toggle-btn">Explore More</button>
+                  <div class="novel-details-content hidden">
+                    <p>
+                      <i>Jane Eyre</i> is a classic novel that explores themes
+                      of love, morality, and self-respect through the journey of
+                      its strong-willed protagonist.
+                      <a href="janeEyre.html" class="novel-link">Read More</a>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -204,17 +207,19 @@
               <div class="novel-content">
                 <h3 class="novel-title">Wuthering Heights</h3>
                 <p class="novel-author">By Emily Brontë</p>
-                <details>
-                  <summary class="novel-details-summary">Explore More</summary>
-                  <p class="novel-details-content">
-                    <i>Wuthering Heights</i> is a masterpiece of Gothic fiction,
-                    exploring themes of passion, revenge, and fate on the
-                    Yorkshire moors.
-                    <a href="wutheringHeights.html" class="novel-link"
-                      >Read More</a
-                    >
-                  </p>
-                </details>
+                <div class="novel-details">
+                  <button class="toggle-btn">Explore More</button>
+                  <div class="novel-details-content hidden">
+                    <p>
+                      <i>Wuthering Heights</i> is a masterpiece of Gothic
+                      fiction, exploring themes of passion, revenge, and fate on
+                      the Yorkshire moors.
+                      <a href="wutheringHeights.html" class="novel-link"
+                        >Read More</a
+                      >
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -314,5 +319,36 @@
         </div>
       </div>
     </footer>
+
+    <button id="backToTop" class="back-to-top">Back to Top ↑</button>
+
+    <!-- Welcome Overlay - Positioned at the end of body to avoid structure interference -->
+    <div id="welcome-overlay" class="hidden">
+      <div class="welcome-container">
+        <div class="welcome-icon">
+          <img src="assets/images/logo.png" alt="Logo" />
+        </div>
+        <h1>Welcome to The Brontë Sisters</h1>
+        <div class="welcome-quote">
+          <div class="quote-marker"></div>
+          <blockquote>
+            "I am no bird; and no net ensnares me: I am a free human being with
+            an independent will."
+          </blockquote>
+          <cite>― Charlotte Brontë, Jane Eyre</cite>
+        </div>
+        <p class="welcome-description">
+          Explore the lives and literary masterpieces of Charlotte, Emily, and
+          Anne Brontë, three extraordinary sisters whose works continue to
+          captivate readers worldwide.
+        </p>
+        <button id="welcome-close-btn">Enter Site</button>
+      </div>
+    </div>
+    <script src="js/toggleContent.js"></script>
+
+    <script src="js/backToTop.js"></script>
+    <script src="js/welcome.js"></script>
+    <script src="js/datetime.js"></script>
   </body>
 </html>
