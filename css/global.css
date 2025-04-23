@@ -57,7 +57,7 @@ body {
 /* Navigation Links */
 .nav-link {
   text-decoration: none;
-  color: #3f121b;
+  color: black;
   transition: color 0.3s ease;
   position: relative;
   padding-bottom: 2px;
@@ -145,20 +145,25 @@ a:hover {
   background: #d1d1d1;
   color: black;
   text-align: center;
-  padding: 15px;
+  padding: 25px 15px;
   width: 100%;
 }
 
 .footer-logo {
   width: 120px;
   margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.footer-logo:hover {
+  transform: scale(1.05);
 }
 
 .footer-divider {
   border: 0;
-  height: 1px;
-  background-color: black;
-  margin: 10px 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #333, transparent);
+  margin: 15px 0;
 }
 
 .footer-content {
@@ -166,12 +171,59 @@ a:hover {
   justify-content: space-around;
   text-align: left;
   flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-section {
+  min-width: 200px;
+  padding: 10px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.footer-section h3::after,
+.footer-section h4::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #333;
+  transition: width 0.3s ease;
+}
+
+.footer-section h3:hover::after,
+.footer-section h4:hover::after {
+  width: 100%;
+}
+
+.footer-section p {
+  margin: 8px 0;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-section p:hover {
+  transform: translateX(5px);
+  color: #444;
 }
 
 .footer-icon {
   width: 16px;
   height: 16px;
   vertical-align: middle;
+  margin-right: 8px;
+  transition: transform 0.3s ease;
+}
+
+.footer-icon:hover {
+  transform: scale(1.2);
 }
 
 .back-to-top {

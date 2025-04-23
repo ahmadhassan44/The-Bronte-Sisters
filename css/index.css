@@ -2,7 +2,7 @@
 .hero-section {
   position: relative;
   width: 100%;
-  margin-top: 2%;
+  margin-top: 0;  
   text-align: center;
 }
 
@@ -220,4 +220,69 @@
 
 .toggle-btn.active {
   background-color: #666;
+}
+
+
+/* Enhanced Table Styles */
+.table-section {
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.table-header {
+    background-color: #d1d1d1;
+    color: black;
+}
+
+.table-header .table-cell {
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 15px;
+    border: none;
+}
+
+.table-cell {
+    padding: 12px 15px;
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+tr:not(.table-header):hover {
+    background-color: #f8f9fa;
+    transform: scale(1.01);
+}
+
+.table-row-alt {
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    color: black;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #2c3e50;
+    margin: 10px auto;
 }
