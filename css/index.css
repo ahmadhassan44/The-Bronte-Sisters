@@ -203,3 +203,21 @@
   margin-top: 0;
   width: 100%;
 }
+
+.hidden {
+  display: none;
+}
+
+.toggle-btn {
+  background-color: #333;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.toggle-btn.active {
+  background-color: #666;
+}

@@ -167,9 +167,6 @@ a:hover {
   flex-wrap: wrap;
 }
 
-.footer-section {
-  /* Column in footer */
-}
 
 .footer-icon {
   width: 16px;
@@ -180,7 +177,7 @@ a:hover {
 .back-to-top {
     position: fixed;
     bottom: 20px;
-    right: 20px;  /* Changed from left: 20px to right: 20px */
+    right: 20px; 
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 10px 15px;
